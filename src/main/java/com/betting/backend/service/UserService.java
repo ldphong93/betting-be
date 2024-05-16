@@ -32,8 +32,10 @@ public class UserService {
             LoginResponse response = LoginResponse.builder()
                     .successful(true)
                     .token(user.getRole().equalsIgnoreCase("admin") ? ADMIN_TOKEN : BETTOR_TOKEN)
+                    .id(user.getId())
                     .username(user.getUsername())
                     .role(user.getRole())
+                    .balance(user.getBalance())
                     .build();
 
             log.info("Login successfully with username [{}]", request.getUsername());

@@ -11,7 +11,11 @@ public class LoginResponse {
 
     private String token;
 
+    private Integer id;
+
     private String username;
 
     private String role;
+
+    private Integer balance;
 }

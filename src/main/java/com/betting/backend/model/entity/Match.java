@@ -8,6 +8,9 @@ import java.sql.Date;
 @Entity
 @Table(name = "match")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Match {
 
     @Id
